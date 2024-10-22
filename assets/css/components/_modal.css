@@ -1,0 +1,38 @@
+.modal {
+    display: none; /* Oculta a modal por padrão */
+    position: fixed; /* Fixa na tela */
+    z-index: 100; /* Coloca acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro com opacidade */
+    display: flex; /* Flexbox para centralizar o vídeo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+  }
+  
+  .modal iframe {
+    width: 90%; /* Largura do vídeo como percentual da modal */
+    height: 90%; /* Altura do vídeo como percentual da modal */
+    border: solid 3px white; /* Borda branca ao redor do vídeo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); /* Sombra elegante ao redor */
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .close:hover {
+    color: #ff0000; /* Cor ao passar o mouse */
+    transform: scale(1.2); /* Animação de escala ao passar o mouse */
+  }
+  
